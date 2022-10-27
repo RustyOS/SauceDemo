@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace SauceDemo
+namespace SauceDemoBuy
 {
     internal class SD_C1_Buy
     {

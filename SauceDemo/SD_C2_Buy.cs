@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace SauceDemo
+namespace SauceDemoBuy
 {
     internal class SD_C2_Buy
     {

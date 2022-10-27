@@ -1,13 +1,18 @@
 ﻿using NUnit.Framework;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace SauceDemoLogin
 {
-    internal class SD_C1_Login
+    internal class SD_C2_Login
     {
+
         //Postavke za Chrome/Driver
 
         IWebDriver driver = new ChromeDriver();
@@ -32,7 +37,7 @@ namespace SauceDemoLogin
 
         }
         [Test]
-        public void ExecuteTestLogin1()
+        public void ExecuteTestLogin2()
         {
 
             //Pauza
@@ -42,7 +47,7 @@ namespace SauceDemoLogin
             IWebElement ele = driver.FindElement(By.Id("user-name"));
 
             //Unos Username
-            ele.SendKeys("standard_user");
+            ele.SendKeys("locked_out_user");
             Thread.Sleep(2000);
             Console.Write("Username value is entered! \n");
 

@@ -75,7 +75,9 @@
     <Compile Include="SD_C1_Login.cs" />
     <Compile Include="SD_C1_Buy.cs" />
     <Compile Include="SD_C2_Buy.cs" />
+    <Compile Include="SD_C2_Login.cs" />
     <Compile Include="SD_C3_Buy.cs" />
+    <Compile Include="SD_C3_Login.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

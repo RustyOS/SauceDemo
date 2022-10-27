@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NUnit.Framework.Internal;
 
-namespace SauceDemo
+namespace SauceDemoBuy
 {
     internal class SD_C3_Buy
     {

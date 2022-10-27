@@ -72,7 +72,7 @@ namespace SauceDemo_Login
             Thread.Sleep(9000);
 
             //Zatvaranje Chrome
-            driver.Close();
+            driver.Dispose();
         }
     }
 }

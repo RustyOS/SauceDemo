@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace SauceDemo
 {
-    internal class SD_C2_Buy
+    internal class SD_C1_Buy
     {
         //Postavke za Chrome/Driver
 
@@ -37,7 +38,7 @@ namespace SauceDemo
 
         }
         [Test]
-        public void ExecuteTest2()
+        public void ExecuteTest1()
         {
             //----------------------------------------------------------------------//
 
@@ -75,18 +76,10 @@ namespace SauceDemo
             driver.FindElement(css).Click();
             Thread.Sleep(1000);
 
-            //Kupovina prvog najjeftinijeg proizovda
+            //Kupovina najjeftinijeg proizovda
             driver.FindElement(By.Id("add-to-cart-sauce-labs-onesie")).Click();
             Console.Write("Add to cart is Valid! \n");
             Thread.Sleep(1000);
-
-            //Kupovina drugog najjeftinijeg proizovda
-            driver.FindElement(By.Id("add-to-cart-sauce-labs-bike-light")).Click();
-            Console.Write("Add to cart is Valid! \n");
-            Thread.Sleep(1000);
-
-
-           
 
             //Navigacija
             driver.FindElement(By.ClassName("shopping_cart_link")).Click();
@@ -140,17 +133,10 @@ namespace SauceDemo
 
             //Zatvaranje Chrome
 
-
+           
             driver.Dispose();
 
-
+            
         }
     }
 }
-
-
-
-
-    
-
-

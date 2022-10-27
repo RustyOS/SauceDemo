@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using NUnit.Framework.Internal;
 
 namespace SauceDemo
 {
-    internal class SD_C2_Buy
+    internal class SD_C3_Buy
     {
         //Postavke za Chrome/Driver
 
@@ -37,7 +38,7 @@ namespace SauceDemo
 
         }
         [Test]
-        public void ExecuteTest2()
+        public void ExecuteTest3()
         {
             //----------------------------------------------------------------------//
 
@@ -86,7 +87,34 @@ namespace SauceDemo
             Thread.Sleep(1000);
 
 
-           
+            //Kupovina treceg najjeftinijeg proizovda
+            driver.FindElement(By.Id("add-to-cart-sauce-labs-bolt-t-shirt")).Click();
+            Console.Write("Add to cart is Valid! \n");
+            Thread.Sleep(1000);
+
+
+            //Kupovina cetvrtog najjeftinijeg proizovda
+            driver.FindElement(By.Id("add-to-cart-test.allthethings()-t-shirt-(red)")).Click();
+            Console.Write("Add to cart is Valid! \n");
+            Thread.Sleep(1000);
+
+            //Kupovina petog najjeftinijeg proizovda
+            driver.FindElement(By.Id("add-to-cart-sauce-labs-backpack")).Click();
+            Console.Write("Add to cart is Valid! \n");
+            Thread.Sleep(1000);
+
+            //Kupovina sestog najjeftinijeg proizovda
+            driver.FindElement(By.Id("add-to-cart-sauce-labs-fleece-jacket")).Click();
+            Console.Write("Add to cart is Valid! \n");
+            Thread.Sleep(1000);
+
+
+
+
+
+
+            
+
 
             //Navigacija
             driver.FindElement(By.ClassName("shopping_cart_link")).Click();
@@ -126,6 +154,7 @@ namespace SauceDemo
 
             driver.Navigate().Refresh();
 
+
             //----------------------------------------------------------------------//
 
 
@@ -147,10 +176,3 @@ namespace SauceDemo
         }
     }
 }
-
-
-
-
-    
-
-

@@ -36,7 +36,7 @@ namespace SauceDemoLogin
 
         }
         [Test]
-        public void ExecuteTestLogin2()
+        public void ExecuteTestLogin3()
         {
 
             //Pauza
